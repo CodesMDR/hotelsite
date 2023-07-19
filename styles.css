@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Reenie+Beanie&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.banner .logo {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+
+.banner .nav {
+  margin-right: 200px;
+  list-style: none;
+}
+.banner .nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.banner .nav #book {
+  color: rgb(255, 255, 255);
+  padding: 10px 10px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  border-bottom: transparent;
+}
+
+.banner .nav #book:hover {
+  background-color: rgba(0, 0, 0, 0.863);
+  color: rgba(255, 255, 255, 0.5);
+}
+.banner .nav a:hover,
+.banner .nav a:focus {
+  color: rgba(255, 255, 255, 0.685);
+}
+
+.banner .logo h1 {
+  font-family: "Reenie Beanie", cursive;
+  font-size: 50px;
+  box-shadow: rgba(0, 0, 0, 0.993) 0px 25px 20px -20px;
+  text-shadow: 3px 3px #0a0a14;
+}
+
+.banner .logo img {
+  height: 90px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/*SIDEBAR*/
+.sidebar {
+  display: none;
+}
+.sidebar.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: right;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.842);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 300px;
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+}
+
+.sidebar a {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.sidebar a:hover {
+  color: rgb(141, 198, 236);
+  transition: 0.5s;
+}
+
+#more {
+  visibility: hidden;
+}
+#more {
+  display: flex;
+  cursor: pointer;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+  transition: all 0.2s;
+}
+
+#more.change {
+  transform: rotateZ(-90deg);
+  color: white;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  border-bottom: 2px solid black;
+}
+
+header .center {
+  padding-left: 200px;
+  padding-bottom: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.356);
+}
+
+header .center h1 {
+  font-size: 100px;
+  margin-top: 200px;
+}
+header .center p {
+  max-width: 500px;
+  padding-top: 10px;
+}
+
+header .center button {
+  padding-top: 10px;
+  padding: 20px 30px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+header .center button:hover,
+header .center button:focus {
+  transition: 0.9s;
+  transform: scale(0.9);
+  background-color: rgba(255, 255, 255, 0.822);
+}
+
+header .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+header .image_item {
+  position: absolute;
+  top: 100px;
+  right: 20%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+header .image_item img {
+  width: 240px;
+  height: 134px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.986) 0px 25px 20px -20px;
+  opacity: 0.85;
+}
+
+header .image_item img:hover {
+  opacity: 1;
+  transition: 0.9s;
+}
+
+/*SOCIALS*/
+header .socials {
+  display: flex;
+  margin-top: 20px;
+}
+
+header .socials a {
+  font-size: 40px;
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.418);
+}
+
+header .socials a:hover {
+  color: white;
+  transition: 0.5s;
+  transform: scale(1);
+}
+
+/*BOOKING*/
+.booking {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 10%;
+  padding: 5px;
+  bottom: 0;
+  border: 1px solid rgba(12, 12, 12, 0.418);
+  border-radius: 5px;
+  background-color: rgba(247, 106, 87, 0.918);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.986) 0px 25px 20px -20px;
+}
+
+.booking input {
+  padding: 5px;
+}
+
+.booking label {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.booking .check button {
+  background-color: rgb(7, 7, 7);
+  padding: 15px 25px;
+  border-radius: 5px;
+  margin-left: 40px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border: 1px solid black;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.booking .check button:focus {
+  outline: none;
+}
+
+.booking .check button:hover {
+  background-color: rgba(0, 0, 0, 0.801);
+}
+
+.booking input[type="number"] {
+  width: 50px;
+  background-color: rgba(160, 115, 115, 0.219);
+  border: 1px solid black;
+  color: white;
+}
+.booking input[type="date"] {
+  background-color: rgba(160, 115, 115, 0.219);
+  border: 1px solid black;
+  color: white;
+}
+input::placeholder {
+  color: white;
+}
+
+/*ABOUT*/
+.about {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid black;
+  margin-top: 70px;
+}
+
+.about h1 {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+.about p {
+  margin-top: 40px;
+  max-width: 800px;
+}
+
+/*Rooms*/
+.rooms {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid black;
+  margin-top: 70px;
+}
+
+.rooms h1 {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+.rooms p {
+  margin-top: 40px;
+  max-width: 800px;
+}
+
+@media screen and (max-width: 1699px) {
+  .image_item {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 1357px) {
+  .banner .nav {
+    display: none;
+  }
+  #more {
+    visibility: visible;
+  }
+
+  header .image {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1129px) {
+  * {
+    font-size: 95%;
+  }
+  .center h1 span {
+    font-size: 50px;
+  }
+
+  .booking {
+    left: 20%;
+    height: auto;
+    font-size: 50%;
+    bottom: 0;
+  }
+
+  header .center {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  header .center p {
+    left: 90%;
+  }
+
+  header .banner .logo {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .booking {
+    left: 20%;
+    height: auto;
+    font-size: 50%;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 906px) {
+  .booking {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 854px) {
+  .booking {
+    font-size: 10%;
+    left: 0;
+  }
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Toronto</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body id="home">
+    <header>
+      <div class="banner">
+        <div class="logo">
+          <img src="images/logo3.png" alt="" />
+          <h1>Hotel Toronto</h1>
+        </div>
+        <div class="nav">
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#rooms">Rooms</a>
+              <a href="#restaurant">Restaurant</a>
+              <a href="#gallery">Gallery</a>
+              <a href="#book" id="book">Book Today</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <i class="fa-solid fa-bars" id="more"></i>
+
+      <div class="sidebar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#restaurant">Restaurant</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#book" id="book">Book Today</a>
+      </div>
+
+      <div class="center">
+        <h1>
+          <span class="one">Hello,</span> <span class="two">Bonjour,</span>
+          <span class="three">Hola!</span>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, in
+          ipsum placeat ea beatae nobis debitis tempora accusantium aspernatur
+          quam pariatur excepturi. Cumque, maxime! Consequatur at vero ratione
+          sunt enim? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Placeat, obcaecati! Rerum, nostrum? Eos labore nostrum modi! Ut
+          architecto, voluptatum enim dolor, tempora vel repellat ipsum, quam
+          aspernatur et modi eum?
+        </p>
+        <div class="socials">
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="image">
+        <img src="images/home4.jpg" class="slide" alt="" />
+      </div>
+      <div class="image_item">
+        <img
+          src="images/home1.jpg"
+          alt=""
+          class="slide"
+          onclick="img('images/home1.jpg')"
+        />
+        <img
+          src="images/home22.jpg"
+          alt=""
+          class="slide"
+          onclick="img('images/home22.jpg')"
+        />
+        <img
+          src="images/home2.jpg"
+          alt=""
+          class="slide"
+          onclick="img('images/home2.jpg')"
+        />
+        <img
+          src="images/home4.jpg"
+          alt=""
+          class="slide"
+          onclick="img('images/home4.jpg')"
+        />
+      </div>
+
+      <div class="booking">
+        <label>Check In:</label>
+        <input type="date" />
+        <label>Check Out:</label>
+        <input type="date" />
+        <label>Adults:</label>
+        <input type="number" placeholder="0" />
+        <label>Rooms:</label>
+        <input type="number" placeholder="0" />
+        <div class="check">
+          <button>Check Availability</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="about">
+      <h1 id="about">Hotel Toronto</h1>
+      <h2>About</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+        corrupti maiores quia voluptatum facere porro? Aliquam deleniti
+        inventore, sit facere, iste quos impedit nisi molestiae eveniet quam
+        iusto? Optio, accusantium. Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Voluptate eos, nam esse nihil voluptas reprehenderit.
+        Vel et ut facere eligendi, accusamus doloremque natus voluptate ex
+        sequi, odit blanditiis commodi optio. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Magnam laudantium, vel temporibus natus
+        ab, mollitia quae porro tenetur dignissimos error cupiditate. Ad
+        accusantium mollitia ab quaerat temporibus nisi voluptates
+        necessitatibus!
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+        corrupti maiores quia voluptatum facere porro? Aliquam deleniti
+        inventore, sit facere, iste quos impedit nisi molestiae eveniet quam
+        iusto? Optio, accusantium. Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Voluptate eos, nam esse nihil voluptas reprehenderit.
+        Vel et ut facere eligendi
+      </p>
+    </section>
+
+    <section class="rooms">
+      <h1 id="rooms">Hotel Toronto</h1>
+      <h2>Rooms</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+        corrupti maiores quia voluptatum facere porro? Aliquam deleniti
+        inventore, sit facere, iste quos impedit nisi molestiae eveniet quam
+        iusto? Optio, accusantium. Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Voluptate eos, nam esse nihil voluptas reprehenderit.
+        Vel et ut facere eligendi, accusamus doloremque natus voluptate ex
+        sequi, odit blanditiis commodi optio. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Magnam laudantium, vel temporibus natus
+        ab, mollitia quae porro tenetur dignissimos error cupiditate. Ad
+        accusantium mollitia ab quaerat temporibus nisi voluptates
+        necessitatibus!
+      </p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
